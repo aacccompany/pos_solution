@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="pos_solution_res_company" model="ir.ui.view">
+        <field name="name">pos.solution.res.company.inherit</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='website']" position="after">
+                <field name="pos_solution_secret_key"/>
+                <field name="pos_solution_auth_key"/>
+                <field name="pos_solution_api_key"/>
+                <field name="pos_solution_merchant_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+
+
+
+

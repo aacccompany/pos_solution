@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    Copyright (c) 2017-today MuK IT GmbH.
+
+    This file is part of MuK Grid Snippets
+    (see https://mukit.at).
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+  -->
+
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='quotation_order_setting_container']" position="after">
+                <!-- <h2>POS Solution config</h2>
+                <div class="row mt16 o_settings_container" name="quotation_order_setting_container">
+                    <div class="col-12 col-lg-6 o_setting_box" id="display_pay_solutions_setting">
+                        <label for="pos_solution_secret_key">Secret Key</label>
+                        <field name="pos_solution_secret_key" string="Secret Key"/>
+                        <label for="pos_solution_auth_key">Auth Key</label>
+                        <field name="pos_solution_auth_key" string="Auth Key"/>
+                        <label for="pos_solution_api_key">API Key</label>
+                        <field name="pos_solution_api_key" string="API Key"/>
+                        <label for="pos_solution_merchant_id">Merchant Id</label>
+                        <field name="pos_solution_merchant_id" string="Merchant Id"/>
+                        <label for="apply_ded_4">Merchant Id</label>
+                        <field name="apply_ded_4" string="Merchant Id"/>
+                    </div>
+                </div> -->
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

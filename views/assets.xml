@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="assets_backend" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+        
+            <script type="text/javascript" src="/pos_solution/static/src/js/pos_solution.js"></script>
+            <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.6.0/jQuery.print.js"></script>
+        </xpath>
+    </template>
+
+    <template id="assets" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/pos_solution/static/src/css/payment.css"/>
+        </xpath>
+    </template>
+</odoo>
